@@ -1,0 +1,16 @@
+
+{
+  "services": [
+    {
+      "name": "lncc-web",
+      "startCommand": "python app/routes.py"
+    },
+    {
+      "name": "discounts-crawler",
+      "startCommand": "python scraper.py",
+      "envVars": [],
+      "autoDeploy": true,
+      "schedule": "@daily"
+    }
+  ]
+}
